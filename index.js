@@ -65,9 +65,7 @@ console.log("----------------------------------------------");
 console.log("Answer Q11");
 console.log("Friends Name");
 var FriendsNames = ["Ali", "Waqas", "Abdul", "Ahmad"];
-FriendsNames.forEach(function (element) {
-    console.log(element);
-});
+console.log(FriendsNames);
 console.log("----------------------------------------------");
 //12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name,
 // print a message to them. The text of each message should be the same, but each message should be personalized 
@@ -220,6 +218,71 @@ console.log("----------------------------------------------");
 //23. Conditional Tests: Write a series of conditional tests. 
 //Print a statement describing each test and your prediction for the results of each test.
 // Your code should look something like this:
-var car = 'subaru';
+console.log("Answer Q23");
+var car1 = 'subaru';
 console.log("Is car == 'subaru'? I predict True.");
-console.log(car == 'subaru');
+console.log(car1 == 'subaru');
+var car2 = 'Toyota';
+console.log("Is car == 'Toyota'? I predict True.");
+console.log(car2 == 'Toyota');
+var car3 = 'Suzuki';
+console.log("Is car == 'Suzuki'? I predict True.");
+console.log(car3 == 'Suzuki');
+var car4 = 'KIA';
+console.log("Is car == 'KIA'? I predict True.");
+console.log(car4 == 'KIA');
+var car5 = 'Nissan';
+console.log("Is car == 'Nissan'? I predict True.");
+console.log(car5 == 'Nissan');
+var car6 = 'Mokey';
+console.log("Is car == 'Monkey'? I predict False.");
+console.log(car1 == 'subaru');
+var car7 = 'Air';
+console.log("Is car == 'Air'? I predict False.");
+console.log(car2 == 'Toyota');
+var car8 = 'cycle';
+console.log("Is car == 'cycle'? I predict False.");
+console.log(car3 == 'Suzuki');
+var car9 = 'Tree';
+console.log("Is car == 'Tree'? I predict False.");
+console.log(car4 == 'KIA');
+var car10 = 'water';
+console.log("Is car == 'water'? I predict False.");
+console.log(car5 == 'Nissan');
+console.log("----------------------------------------------");
+//39. City Names: Write a function called city_country() that takes in the name of a 
+//city and its country. The function should return a string formatted like this:
+function city_country(city, country) {
+    return city + " , " + country;
+}
+console.log("Answer Q39");
+console.log(city_country("Lahore", "Pakistan"));
+console.log(city_country("Karachi", "Pakistan"));
+console.log(city_country("Islamabad", "Pakistan"));
+console.log("----------------------------------------------");
+//40: Album: Write a function called make_album() that builds a Object describing a music album.
+// The function should take in an artist name and an album title, and 
+//it should return a Object containing these two pieces of information.
+// Use the function to make three dictionaries representing different albums.
+// Print each return value to show that Objects are storing the album information correctly. 
+//Add an optional parameter to make_album() that allows you to store the number of tracks on an album.
+// If the calling line includes a value for the number of tracks, add that value to the album’s Object.
+// Make at least one new function call that includes the number of tracks on an album.
+console.log("Answer Q40");
+function make_album(pArtistName, pAlbumTitle) {
+    var album = {
+        artistname: pArtistName,
+        albumtitle: pAlbumTitle,
+    };
+    return album;
+}
+var Album1 = make_album("artistname1", "albumtitle1");
+var Album2 = make_album("artistname2", "albumtitle2");
+var Album3 = make_album("artistname3", "albumtitle3");
+console.log("Album 1");
+console.log(Album1);
+console.log("Album 2");
+console.log(Album2);
+console.log("Album 3");
+console.log(Album3);
+console.log("----------------------------------------------");
